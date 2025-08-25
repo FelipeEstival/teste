@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #BCE5FF;
+            background: linear-gradient(to bottom, #d9f0ff, #8ed0f9);
+            min-height: 100vh;
+            color: aliceblue;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cabecalho {
+            text-align: center;
+            background-color: #015C91;
+            padding: 20px;
+        }
+
+        .bloco01 {
+            color: #015C91;
+            font-size: 70px;
+            margin: 80px auto 0;
+            text-align: center;
+            line-height: 85px;
+        }
+
+        .textinho {
+            color: #4395c4;
+            font-size: 25px;
+            margin: 80px auto;
+            text-align: center;
+            line-height: 30px;
+            max-width: 90%;
+        }
+
+        .formtexto {
+            color: #daf1ff;
+            font-size: 30px;
+            margin: auto;
+            text-align: center;
+            line-height: 85px;
+            margin-top: 15px;
+        }
+
+        .formcaixa {
+            background-color: #015C91;
+            max-width: 900px;
+            width: 90%;
+            margin: 70px auto 0;
+            text-align: center;
+            padding: 1px 0 50px 0;
+            border-radius: 75px;
+        }
+
+        .designinscricao {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        input,
+        select {
+            width: 200px;
+            padding: 10px;
+            border-radius: 44px;
+            font-family: 'Montserrat', sans-serif;
+            border: 2px solid #0058b0;
+        }
+
+        .genero input {
+            width: 30px;
+        }
+
+        .genero p {
+            font-size: 20px;
+            color: #8ed0f9;
+        }
+
+        textarea {
+            width: 95%;
+            max-width: 800px;
+            margin-top: 20px;
+            padding: 40px;
+            border-radius: 44px;
+            font-family: 'Montserrat', sans-serif;
+            border: 2px solid #0058b0;
+        }
+
+        .observacoes label {
+            font-size: 20px;
+            color: #8ed0f9;
+        }
+
+        .img {
+            text-align: center;
+        }
+
+        .img img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 70px;
+        }
+
+        @media (max-width: 768px) {
+            .bloco01 {
+                font-size: 45px;
+                line-height: 1.2;
+            }
+
+            .textinho {
+                font-size: 20px;
+            }
+
+            .formtexto h2 {
+                font-size: 24px;
+                line-height: 1.3;
+            }
+
+            .designinscricao {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                margin-top: 30px;
+            }
+
+            .designinscricao label,
+            .designinscricao input,
+            .designinscricao select {
+                width: 85%;
+                margin: 0;
+            }
+
+            .designinscricao input[type="radio"] {
+                width: auto;
+            }
+
+            .formcaixa {
+                padding: 25px 10px;
+                border-radius: 30px;
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Atividade Tecnolgias Web</h1>
+        <p>por Felipe Mauro Estival</p>
+    </div>
+    <div class="bloco01">
+        <h2>Transforme <br>cada metro em <br><span style="color: #02273c;">conquista.</span></h2>
+    </div>
+    <div class="img">
+        <img src="Agrupar 2.png" alt="Imagens nadadores">
+    </div>
+    <div class="textinho">
+        <h2>Competições de natação
+            <br> para todas as idades!</h2>
+    </div>
+    <div>
+        <div class="formcaixa">
+            <div class="formtexto">
+                <h2>Formulário de inscrição:</h2>
+            </div>
+            <div class="designinscricao">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome">
+            </div>
+            <div class="designinscricao">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha">
+            </div>
+            <div class="designinscricao">
+                <label for="idade">Data de nascimento</label>
+                <input type="date" id="idade">
+            </div>
+            <div class="designinscricao">
+                <form class="genero">
+                    <p><STRONg>GÊNERO:</STRONg></p>
+
+                    <label>
+                        <input type="radio" name="genero" value="feminino">
+                        Feminino
+                    </label>
+
+                    <label>
+                        <input type="radio" name="genero" value="masculino">
+                        Masculino
+                    </label>
+                </form>
+                <div class="designinscricao">
+                    <form>
+                        <label for="estado">Selecione seu estado:</label>
+                        <select id="estado" name="estado">
+                            <option value="">-- Escolha seu estado --</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="designinscricao">
+                    <form class="sla">
+                        <p>Escolha a(s) prova(s) que deseja participar:</p>
+
+                        <label>
+                            <input type="checkbox" name="prova" value="500m">
+                            500m
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="prova" value="1000m">
+                            1000m
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="prova" value="2000m">
+                            2000m
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="prova" value="3000m">
+                            3000m
+                        </label>
+                    </form>
+                </div>
+                <div class="designinscricao">
+                    <form class="observacoes">
+                        <label for="observacoes"><strong>OBSERVAÇÕES:</strong></label><br>
+                        <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Digite aqui suas observações..."></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
